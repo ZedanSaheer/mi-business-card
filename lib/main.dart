@@ -13,18 +13,29 @@ class Main extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(
-            color: Colors.white,
-            child: Text('Hello'),
-            height: 100.0,
-            width: 100.0,
-            margin: EdgeInsets.symmetric(
-              vertical: 15,
-              horizontal: 5,
+            child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Container(
+              width: 30.0,
+              color: Colors.red,
+              child: Text('Container Two'),
             ),
-            padding: EdgeInsets.all(10),
-          ),
-        ),
+            SizedBox(
+              width: 20.0,
+            ),
+            Container(
+              width: 50.0,
+              color: Colors.blue,
+              child: Text('Container Two'),
+            ),
+            Container(
+              width: 40.0,
+              color: Colors.white,
+              child: Text('Container Two'),
+            ),
+          ],
+        )),
       ),
     );
   }
